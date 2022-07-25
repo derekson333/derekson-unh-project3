@@ -6,6 +6,9 @@ function generatePassword() {
   var length = prompt("How long should the password be?"),
         charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
         retVal = "";
+    if (length < 8 || length > 128) {
+      var length = prompt("How long should the password be? (Select a number between 8 and 128)")
+    }
     for (var i = 0, n = charset.length; i < length; ++i) {
         retVal += charset.charAt(Math.floor(Math.random() * n));
     }
