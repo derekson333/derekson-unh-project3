@@ -3,7 +3,7 @@ var generateBtn = document.querySelector("#generate");
 
 // Generate password function
 function generatePassword() {
-  var length = 8,
+  var length = prompt("How long should the password be?"),
         charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
         retVal = "";
     for (var i = 0, n = charset.length; i < length; ++i) {
