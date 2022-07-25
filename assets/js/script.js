@@ -25,7 +25,7 @@ function generatePassword() {
         charset = charset + "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
       }
       if (charset === "") {
-        alert("You must choose at lesat one type of characters")
+        alert("You must choose at least one type of characters")
         selectCharset()
       }
     }
