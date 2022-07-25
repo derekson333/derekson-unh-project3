@@ -33,6 +33,7 @@ function generatePassword() {
     // Calls the character type selection function
     selectCharset()
 
+    // Creates the random password with the selected length and character set
     for (var i = 0, n = charset.length; i < length; ++i) {
         retVal += charset.charAt(Math.floor(Math.random() * n));
     }
